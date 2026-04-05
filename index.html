@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Learning Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header>
+      <h1>📘 Digital Learning Platform</h1>
+      <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('lessons')">Lessons</button>
+        <button onclick="showPage('literacy')">Digital Literacy</button>
+        <button onclick="showPage('progress')">My Progress</button>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- Home -->
+      <section id="home" class="page active">
+        <h1>Welcome Students!</h1>
+        <ul>
+          <li><strong>Welcome!</strong> Explore our Digital Learning Platform and enjoy interactive lessons designed for students.</li>
+          <li><strong>Note:</strong> This is a <strong>demo/protocol project</strong> created for learning purposes, not a live educational service. </li>
+          <li><strong>Lessons:</strong> Access engaging content in Mathematics, Science, and Language with easy-to-follow videos.</li>
+          <li><strong>Track Progress:</strong> Monitor your learning journey and see which lessons you have completed.</li>
+          <li><strong>Easy & Interactive:</strong> All features are in one page — start learning without navigating elsewhere.</li>
+        </ul>
+      </section>
+           <h2>To see the demo of the web page, Kindly click on the Lessons Tab</h2>
+      <!-- Lessons -->
+      <section id="lessons" class="page">
+        <h2>Lessons</h2>
+        <ul>
+          <li>Mathematics - <a href="lessonscience.mp4" target="_blank"> <button id="math-start">Start</button></li>
+          <li>Science - <a href="lessonmath.mp4" target="_blank"> <button id="Science-start">Start</button></li>
+          <li>Language - <a href="lesson1.mp4" target="_blank">  <button id="Language-start">Start</button></li>
+        </ul>
+      </section>
+
+      <!-- Digital Literacy -->
+      <section id="literacy" class="page">
+        <h2>Digital Literacy</h2>
+        <p>Learn how to use smartphones, apps, and the internet safely.</p>
+      </section>
+
+      <!-- Progress -->
+       <section id="progress-section" class="page" style="display:none;">
+        <h2>My Progress</h2>
+        <p>Here you can see your completed lessons:</p>
+        <ul>
+        <li>Mathematics: <span id="math-status">Not Completed ❌</span></li>
+        <li>Science: <span id="science-status">Not Completed ❌</span></li>
+        <li>Language: <span id="language-status">Not Completed ❌</span></li>
+        </ul>
+       </section>
+      
+      <!-- Lessons -->
+      <section id="lessons" class="page">
+        <h2>Lessons</h2>
+        <p>Maths Lesson 1: Basic Multiplication</p>
+        <video width="320" height="240" controls>
+          <source src="lesson1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
